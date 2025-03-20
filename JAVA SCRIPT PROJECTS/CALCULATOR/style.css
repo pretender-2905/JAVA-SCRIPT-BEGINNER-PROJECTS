@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding: 7rem 0 7rem 0;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem 1rem 4rem 1rem;
+    height: auto;
+    width: 270px;
+    background-color: black;
+    border-radius: 50px;
+    gap: 10px;
+    border: 2px solid rgb(165, 165, 165);
+    /* box-shadow: -2px 2px 21px -1px rgba(0,0,0,1); */
+    box-shadow: -2px 2px 21px -1px purple;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    direction: rtl;
+    padding-right: 13rem;
+    max-width: 260px ;
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+    outline: none;
+
+}
+/* -------------------------------------------------- */
+/* FOR REMOVING INCREASE AND DECREASE BUTTON ON INPUT FIELD */
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+/* input[type=number] { */
+    /* -moz-appearance: textfield; */
+/* } */
+
+/* ------------------------------------------------------ */
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button17{
+grid-column: span 2;
+background-color: purple;
+border-radius: 40px;
+background-color: orange;
+display: flex;
+justify-content: left;
+align-items: center;
+padding-left: 1.5rem;
+font-size:1.5rem ;
+color: white;
+}
+
+.button-darkgray{
+    background-color: #333333;
+}
+.button-lightray{
+    background-color: #A5A5A5;
+    color: black;
+}
+.button-orrane{
+    background-color: #A5A5A5;
+    background-color: #FF9500;
+}
