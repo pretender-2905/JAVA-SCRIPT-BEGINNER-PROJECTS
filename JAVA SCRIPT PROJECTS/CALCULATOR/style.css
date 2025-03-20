@@ -32,7 +32,8 @@
 .input{
     background-color: transparent;
     border: none;
-    direction: rtl;
+    /* direction: rtl; */
+    text-align: right;
     padding-right: 13rem;
     max-width: 260px ;
     margin: auto;
@@ -102,7 +103,6 @@ color: white;
     background-color: #A5A5A5;
     color: black;
 }
-.button-orrane{
-    background-color: #A5A5A5;
+.button-orrange{
     background-color: #FF9500;
 }
