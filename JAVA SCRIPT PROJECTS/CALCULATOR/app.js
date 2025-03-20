@@ -17,6 +17,12 @@ function clearDisplay(){
 
 
 function calculate(){
-    let expression = display.value.replace(/÷/g, '/').replace(/x/g, '*');
-    display.value = eval(expression);
+    try{
+        let expression = display.value.replace(/÷/g, '/').replace(/x/g, '*');
+        display.value = new Function('return ' + expression)();
+    }    catch(error){
+        display.value = "Error";
+    }
 }
+
+
